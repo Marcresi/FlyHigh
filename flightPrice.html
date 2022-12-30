@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>FlyHigh</title>
+  <meta name="title" content="FlyHigh">
+
+  <link rel="shortcut icon" href="./assets/images/flightlogo.png">
+
+  <!-- css -->
+  <link rel="stylesheet" href="flightPrice.css">
+
+
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+</head>
+
+<body>
+  <form id="form">
+    <label for="source">Source:</label><br>
+    <input type="text" id="source" name="source" class="input"><br>
+    <label for="destination">Destination:</label><br>
+    <input type="text" id="destination" name="destination" class="input"><br><br>
+    <button type="button" value="Submit" class="input" onclick="getInput()">Submit</button>
+  </form>
+
+  Source:
+  <div id="src"></div>
+  
+  Destination:
+  <div id="dst"></div>
+
+  <div class="content">
+    <textarea name="content" id="pricebox" cols="30" rows="10"></textarea>
+  </div>
+
+  <script src="flight.js">
+    
+  </script>
+
+
+</body>
+
+
+
+</html>
