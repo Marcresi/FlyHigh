@@ -1,0 +1,123 @@
+[
+    {
+        "company": "IndiGo",
+        "flightNo": "6E 2108",
+        "depTime": "06:35",
+        "source": "Lucknow",
+        "duration": "01 h 15 m",
+        "type": "Non stop",
+        "arrivalTime": "07:50",
+        "destination": "New Delhi",
+        "rate": "₹ 3,054"
+    },
+    {
+        "company": "IndiGo",
+        "flightNo": "6E 2026",
+        "depTime": "07:25",
+        "source": "Lucknow",
+        "duration": "01 h 15 m",
+        "type": "Non stop",
+        "arrivalTime": "08:40",
+        "destination": "New Delhi",
+        "rate": "₹ 3,054"
+    },
+    {
+        "company": "IndiGo",
+        "flightNo": "6E 6233",
+        "depTime": "23:10",
+        "source": "Lucknow",
+        "duration": "01 h 15 m",
+        "type": "Non stop",
+        "arrivalTime": "00:25",
+        "destination": "+ 1 DAY",
+        "rate": "New Delhi"
+    },
+    {
+        "company": "AirAsia",
+        "flightNo": "I5 789",
+        "depTime": "23:25",
+        "source": "Lucknow",
+        "duration": "01 h 10 m",
+        "type": "Non stop",
+        "arrivalTime": "00:35",
+        "destination": "+ 1 DAY",
+        "rate": "New Delhi"
+    },
+    {
+        "company": "AirAsia",
+        "flightNo": "I5 330",
+        "depTime": "21:05",
+        "source": "Lucknow",
+        "duration": "01 h 10 m",
+        "type": "Non stop",
+        "arrivalTime": "22:15",
+        "destination": "New Delhi",
+        "rate": "₹ 3,265"
+    },
+    {
+        "company": "AirAsia",
+        "flightNo": "I5 552",
+        "depTime": "09:00",
+        "source": "Lucknow",
+        "duration": "01 h 20 m",
+        "type": "Non stop",
+        "arrivalTime": "10:20",
+        "destination": "New Delhi",
+        "rate": "₹ 4,628"
+    },
+    {
+        "company": "IndiGo",
+        "flightNo": "6E 2683",
+        "depTime": "16:55",
+        "source": "Lucknow",
+        "duration": "01 h 20 m",
+        "type": "Non stop",
+        "arrivalTime": "18:15",
+        "destination": "New Delhi",
+        "rate": "₹ 4,628"
+    },
+    {
+        "company": "IndiGo",
+        "flightNo": "6E 5072",
+        "depTime": "19:35",
+        "source": "Lucknow",
+        "duration": "01 h 15 m",
+        "type": "Non stop",
+        "arrivalTime": "20:50",
+        "destination": "New Delhi",
+        "rate": "₹ 4,628"
+    },
+    {
+        "company": "Air India",
+        "flightNo": "AI 812",
+        "depTime": "20:25",
+        "source": "Lucknow",
+        "duration": "01 h 10 m",
+        "type": "Non stop",
+        "arrivalTime": "21:35",
+        "destination": "New Delhi",
+        "rate": "₹ 5,259"
+    },
+    {
+        "company": "Alliance Air",
+        "flightNo": "9I 646",
+        "depTime": "17:10",
+        "source": "Lucknow",
+        "duration": "02 h 50 m",
+        "type": "1 stop via Dehradun",
+        "arrivalTime": "20:00",
+        "destination": "New Delhi",
+        "rate": "₹ 5,469"
+    },
+    {
+        "company": "IndiGo",
+        "flightNo": "6E 2281",
+        "depTime": "10:35",
+        "source": "Lucknow",
+        "duration": "01 h 15 m",
+        "type": "Non stop",
+        "arrivalTime": "11:50",
+        "destination": "New Delhi",
+        "rate": "₹ 5,573"
+    }
+]

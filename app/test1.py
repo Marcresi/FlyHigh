@@ -79,7 +79,7 @@ destination=input()
 driver = webdriver.Chrome(service=Service(
 ChromeDriverManager().install()), options=chrome_options)
 is_break = False
-start_url = f'http://127.0.0.1:5500/'
+start_url = f'http://127.0.0.1:5501/index.html'
 driver.get(start_url)
 time.sleep(1.5)
 
@@ -99,13 +99,13 @@ book=check_exists_by_xpath_href(driver,'//*[@id="home"]/div/div/a[1]')
 driver.get(book)
 time.sleep(1.0)
 
-driver.find_element(By.XPATH, '//*[@id="source"]').send_keys(source)
+driver.find_element(By.XPATH, '//*[@id="source"]').send_keys(source.capitalize)
 time.sleep(1.5)
 
-driver.find_element(By.XPATH, '//*[@id="destination"]').send_keys(destination)
+driver.find_element(By.XPATH, '//*[@id="destination"]').send_keys(destination.capitalize)
 time.sleep(1.5)
 
-driver.find_element(By.XPATH,'//*[@id="form"]/button').click()
+driver.find_element(By.XPATH,'//*[@id="form"]/div/button[1]').click()
 time.sleep(2.0)
 
 price=flightScrape(source,destination)

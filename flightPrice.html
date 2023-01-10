@@ -22,26 +22,59 @@
 </head>
 
 <body>
-  <form id="form">
+  <!-- <form id="form">
     <label for="source">Source:</label><br>
     <input type="text" id="source" name="source" class="input"><br>
     <label for="destination">Destination:</label><br>
     <input type="text" id="destination" name="destination" class="input"><br><br>
     <button type="button" value="Submit" class="input" onclick="getInput()">Submit</button>
+  </form> -->
+
+  <form  id="form"><!--form-->
+    <h1 class="text-center">Airline Booking Form</h1>
+
+    <div ><!--form-->
+      <h3 class="text-white">Booking Details</h3>
+
+      <div><!--input-->
+        <input type="text" class="input-group" id="source" placeholder="From">
+        <input type="text" class="input-group" id="destination" placeholder="To">
+        <input type="date" class="input-group" placeholder="Departure Date">
+      </div><!--input-->
+
+      <div class="input2"><!--input2-->
+        <input type="number" class="input-group" placeholder="Adult">
+        <input type="number" class="input-group" placeholder="Children(2-11years)">
+        <!-- <input type="number" id="input-group" placeholder="infant(under 2years)"> -->
+      </div>
+
+      <div class="input5">
+        <h3 class="text-white">Personal Details</h3>
+      </div>
+
+      <div class="input6"><!--input6-->
+        <input type="text" class="input-group" placeholder="Full Name">
+        <input type="text" class="input-group" placeholder="Phone Number">
+        <input type="email" class="input-group1" placeholder="Email">
+      </div><!--input6-->
+      <button type="button" value="Submit" class="input" >Submit</button>
+      <button type="reset" class="btn btn-primary">Clear Form</button>
+    </div>
+
   </form>
 
-  Source:
+  <!-- Source:
   <div id="src"></div>
-  
+
   Destination:
-  <div id="dst"></div>
+  <div id="dst"></div> -->
 
   <div class="content">
     <textarea name="content" id="pricebox" cols="30" rows="10"></textarea>
   </div>
 
   <script src="flight.js">
-    
+
   </script>
 
 

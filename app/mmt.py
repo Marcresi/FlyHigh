@@ -9,11 +9,23 @@ from selenium.common.exceptions import NoSuchElementException
 # from helper import *
 import time
 
+src=""
+dst=""
+
+def save(final_data):
+    json_object = json.dumps(final_data, indent=4, ensure_ascii=False)
+    with open("final_data.json", "w", encoding='utf8') as outfile:
+        outfile.write(json_object)
 # user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.61 Safari/537.36'
 def flightScrape(source,destination):
+    global src
+    src=source
+    global dst
+    dst=destination
+    print(src)
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.52'
     chrome_options = Options()
-# chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument("--disable-extensions")
     chrome_options.add_argument("--disable-gpu")
@@ -22,12 +34,6 @@ def flightScrape(source,destination):
 
 
 # Functions created by me for reusability
-    def save(final_data):
-        json_object = json.dumps(final_data, indent=4, ensure_ascii=False)
-        with open("final_data.json", "w", encoding='utf8') as outfile:
-            outfile.write(json_object)
-
-
     def check_exists_by_xpath_href(driver, xpath: str):
         try:
             value = driver.find_element(By.XPATH, xpath)
@@ -110,18 +116,16 @@ def flightScrape(source,destination):
 
 
     driver.find_element(By.XPATH, '//*[@id="root"]/div/div[2]/div/div/div[2]/div[1]/div[3]/label/input').send_keys(Keys.ESCAPE)
-    time.sleep(1.0)
+    time.sleep(2.0)
     driver.find_element(By.XPATH, '//*[@id="root"]/div/div[2]/div/div/div[2]/div[1]/div[3]/label/input').send_keys(Keys.ESCAPE)
     time.sleep(1.0)
 
     driver.find_element(By.XPATH,'//*[@id="SW"]/div[1]/div[1]/ul/li[4]/div[2]').click()
-    time.sleep(2.0)
+    time.sleep(4.0)
     driver.find_element(By.XPATH,'/html/body/div[1]/div/div[2]/div/div/div[2]/p/a').click()
-
-    time.sleep(3.0)
+    time.sleep(8.0)
 
     driver.find_element(By.XPATH,'//*[@id="root"]/div/div[2]/div[2]/div[2]/div/div/div[3]/button').click()
-
     time.sleep(2.0)
 
 # price1=check_exists_by_classname(driver,'timingOption')
@@ -129,4 +133,8 @@ def flightScrape(source,destination):
     # print(price1)
     return price1
 
-# flightScrape()                          
+
+
+
+
+        
